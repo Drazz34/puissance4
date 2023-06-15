@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#board {
+    border: 1px solid #000;
+    margin: 15px auto;
+    border-collapse: collapse;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#button {
+    margin: 15px auto;
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #FFF;
+    width: 160px;
+}
+
+.btnPlay {
+    background-color: #0000FF;
+}
+
+.btnReset {
+    background-color: #FF0000;
+}
+
+.btnPlay:hover {
+    background-color: #0000CC;
+}
+
+.btnReset:hover {
+    background-color: #CC0000;
+}
+
+.cell.r {
+    background: url('img/red.png') no-repeat center;
+}
+
+.cell.y {
+    background: url('img/yellow.png') no-repeat center;
+}
+
+#playerNames {
+    font-size: 20px;
+    margin: 0 auto;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 565px) {
+    #button {
+        width: 375px;
+    }
+    .cell {
+        width: 50px;
+        height: 50px;
+    }
+    #playerNames {
+        width: 375px;
+        font-size: 1.15rem;
+    }
+    .cell.r {
+        background: url('img/red_resp.png') no-repeat center;
+    }
+    
+    .cell.y {
+        background: url('img/yellow_resp.png') no-repeat center;
+    }    
+}
