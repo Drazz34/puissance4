@@ -7,13 +7,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: lightsteelblue;
+}
+
 h2 {
     text-align: center;
     margin-top: 15px;
+    color: #003366;
 }
 
 #board {
-    border: 1px solid #000;
+    border: 1px solid #003366;
     margin: 15px auto;
     border-collapse: collapse;
 }
@@ -28,7 +33,7 @@ h2 {
     justify-content: center;
     width: 80px;
     height: 80px;
-    border: 1px solid #000;
+    border: 1px solid #003366;
     cursor: pointer;
 }
 
@@ -78,6 +83,18 @@ h2 {
     width: 450px;
     display: flex;
     justify-content: space-between;
+}
+
+#player1 {
+    color: #FF0000;
+}
+
+#player2 {
+    color: #FFFF00;
+}
+
+#player1, #player2 {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 565px) {

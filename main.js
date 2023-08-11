@@ -57,9 +57,6 @@ document.getElementById('play').addEventListener('click', function () {
     document.getElementById('player1').textContent = "Joueur 1 : " + players[0];
     document.getElementById('player2').textContent = "Joueur 2 : " + players[1];
 
-    document.getElementById('player1').style.color = 'red';
-    document.getElementById('player2').style.color = 'yellow';
-
     gameActive = true;
 });
 
